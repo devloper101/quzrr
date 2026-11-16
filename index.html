@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quzr Addon</title>
+    <meta
+      name="description"
+      content="Documentation site for the Quzr Addon, a Minecraft Meteor Client addon featuring mace combat, movement, automation, and utility tools."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <div class="brand">Quzr Addon</div>
+        <div class="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#modules">Modules</a>
+          <a href="#requirements">Requirements</a>
+          <a href="#source">Source</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Minecraft Meteor Client Addon</span>
+            <h1>Quzr Addon</h1>
+            <p>
+              A high-impact Minecraft addon focused on mace combat, movement tricks,
+              automation, and utility modules for Meteor Client.
+            </p>
+            <div class="cta-row">
+              <a class="button primary" href="#features">Explore features</a>
+              <a class="button secondary" href="https://github.com/OfficialSparkMC/Quzr-Addon" target="_blank" rel="noreferrer">View source</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2>Addon profile</h2>
+            <ul>
+              <li><strong>Mod id:</strong> qazr-addons</li>
+              <li><strong>Game:</strong> Minecraft 1.21.11</li>
+              <li><strong>Framework:</strong> Meteor Client 0.18.6</li>
+              <li><strong>Category:</strong> Qazr1234</li>
+              <li><strong>Java:</strong> 21</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Overview</span>
+            <h2>Built for aggressive, packet-based combat and utility play</h2>
+          </div>
+          <p class="lead">
+            Quzr Addon is a Meteor Client addon centered around fast mace-based PvP,
+            teleport-assisted movement, creative utility tools, and automation routines.
+            The project includes a large group of modules for combat, movement, mining,
+            chat automation, and creative item generation.
+          </p>
+          <div class="info-grid">
+            <article class="info-box">
+              <h3>Mace / Spear Combat</h3>
+              <p>Includes TP-to-target smashes, totem-break sequences, break-through attack patterns, and hit-triggered variants.</p>
+            </article>
+            <article class="info-box">
+              <h3>Movement Tools</h3>
+              <p>Features instant TP, rise/speed variations, anti-pop movement control, and freecam teleport tools.</p>
+            </article>
+            <article class="info-box">
+              <h3>Automation</h3>
+              <p>Includes ore tracking, shulker farming, auto totem handling, mass TPA actions, and creeper interruption.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Features</span>
+            <h2>Highlights from the Quzr Addon module set</h2>
+          </div>
+
+          <div class="feature-list">
+            <div class="feature-card">
+              <h3>Mace Combat</h3>
+              <ul>
+                <li>TpMace — teleport and smash</li>
+                <li>MaceAttect — hit-triggered smash logic</li>
+                <li>UltraAura — target-selection aura</li>
+                <li>Blacklist — mass target list attacks</li>
+                <li>ArrowKiller — projectile redirect / teleports</li>
+                <li>InfiniteReach — long-range attack / break reach</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <h3>Movement</h3>
+              <ul>
+                <li>PlayerTp — nearest-player teleport</li>
+                <li>Rise / Speed / AutoRise — vertical packet movement</li>
+                <li>AntiPop — neutralize landing state</li>
+                <li>FreecamTp — teleport from freecam</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <h3>Automation</h3>
+              <ul>
+                <li>OreTracker — mine and path toward nearby ores</li>
+                <li>AutoShulkerBox — shulker loop farm helper</li>
+                <li>AutoTotemToHotbar — manage totems automatically</li>
+                <li>AntiCreeper — destroy creepers before detonation</li>
+                <li>MassTpa — spam TPA requests</li>
+                <li>Hitback — auto strike attackers</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <h3>Chat / Info</h3>
+              <ul>
+                <li>auto-gg — kill message helper</li>
+                <li>auto-msg — automatic spam / message tools</li>
+                <li>NearestPlayerHUD — nearest-player info</li>
+                <li>Creative item / potion spawners</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="modules" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Module categories</span>
+            <h2>Examples from the current addon structure</h2>
+          </div>
+
+          <div class="module-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Examples</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mace / Spear</td>
+                  <td>macemiss, TpMace, MaceAttect, SpearKill</td>
+                  <td>Teleport-based damage bursts, shield breaks, target smashes</td>
+                </tr>
+                <tr>
+                  <td>Movement</td>
+                  <td>Rise, AutoRise, Speed, PlayerTp, AntiPop</td>
+                  <td>Vertical movement, repositioning, no-fall packet tricks</td>
+                </tr>
+                <tr>
+                  <td>Automation</td>
+                  <td>OreTracker, AutoShulkerBox, AutoTotemToHotbar, Hitback</td>
+                  <td>Mining, item management, combat response</td>
+                </tr>
+                <tr>
+                  <td>Chat / Utility</td>
+                  <td>auto-gg, auto-msg, NearestPlayerHUD</td>
+                  <td>Player interaction, message automation, info display</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="requirements" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Requirements</span>
+            <h2>What the addon expects</h2>
+          </div>
+          <ul class="check-list">
+            <li>Minecraft 1.21.11</li>
+            <li>Fabric Loader 0.18.6</li>
+            <li>Meteor Client 0.18.6</li>
+            <li>Java 21</li>
+            <li>Use on permissive or test servers only</li>
+          </ul>
+          <div class="warning-box">
+            <h3>Important warning</h3>
+            <p>
+              Many modules use packet-based movement or combat logic that can be highly visible
+              to anticheat systems and may lead to kicks or bans on stricter servers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="source" class="section">
+        <div class="container source-box">
+          <div>
+            <span class="eyebrow">Source</span>
+            <h2>Official addon repository</h2>
+            <p>
+              This project is based on the official source from
+              <a href="https://github.com/OfficialSparkMC/Quzr-Addon" target="_blank" rel="noreferrer">OfficialSparkMC/Quzr-Addon</a>.
+            </p>
+          </div>
+          <a class="button primary" href="https://github.com/OfficialSparkMC/Quzr-Addon" target="_blank" rel="noreferrer">Open GitHub repo</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>Quzr Addon</span>
+        <span>Documentation site</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
